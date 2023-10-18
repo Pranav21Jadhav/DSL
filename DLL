@@ -1,0 +1,135 @@
+cout << "Enter Value which u want to insert" << endl;
+            cin >> x;
+            d1.insertathead(x);
+        }
+        else if (choice == 2)
+        {
+            int x;
+            cout << "Enter Value which u want to insert" << endl;
+            cin >> x;
+            d1.insertattail(x);
+        }
+        else if (choice == 3)
+        {
+            int x, y;
+            cout << "Enter Value which u want to insert" << endl;
+            cin >> x;
+            cout << "Enter Position where u want to insert" << endl;
+            cin >> y;
+            d1.insertatpos(x, y);
+        }
+        else if (choice == 4)
+        {
+            int x, y;
+            cout << "Enter Value which u want to insert" << endl;
+            cin >> x;
+            cout << "Enter Data where u want to insert" << endl;
+            cin >> y;
+            d1.insertatdata(x, y);
+        }
+
+        else if (choice == 5)
+        {
+            int x;
+            cout << "Enter Value which u want to update" << endl;
+            cin >> x;
+            d1.updateathead(x);
+        }
+        else if (choice == 6)
+        {
+            int x;
+            cout << "Enter Value which u want to update" << endl;
+            cin >> x;
+            d1.updateattail(x);
+        }
+        else if (choice == 7)
+        {
+            int x, y;
+            cout << "Enter Value which u want to update" << endl;
+            cin >> x;
+            cout << "Enter Position where u want to update" << endl;
+            cin >> y;
+            d1.updateatpos(x, y);
+        }
+        else if (choice == 8)
+        {
+            int x, y;
+            cout << "Enter Value which u want to update" << endl;
+            cin >> x;
+            cout << "Enter Data where u want to update" << endl;
+            cin >> y;
+            d1.updateatdata(x, y);
+        }
+
+        else if (choice == 9)
+        {
+            d1.deleteathead();
+            cout << "Deleted\n";
+        }
+        else if (choice == 10)
+        {
+            d1.deleteattail();
+            cout << "Deleted\n";
+        }
+        else if (choice == 11)
+        {
+            int x;
+            cout << "Enter Position on which u want to delete" << endl;
+            cin >> x;
+            d1.deleteatpos(x);
+        }
+        else if (choice == 12)
+        {
+            int x;
+            cout << "Enter Data which u want to delete" << endl;
+            cin >> x;
+            d1.deleteatdata(x);
+        }
+
+        else if (choice == 13)
+        {
+            int x;
+            cout << "Enter Data to search" << endl;
+            cin >> x;
+            d1.searchdata(x);
+        }
+
+        // NO NEED IN DLL
+        //  else if (choice == 14)
+        //  {
+        //      d1.reverse();
+        //  }
+
+        else if (choice == 15)
+        {
+            d2.create();
+            d2.print();
+        }
+        else if (choice == 16)
+        {
+            d1.concatenate(d2);
+        }
+        else if (choice == 17)
+        {
+            d1.sort();
+        }
+
+        else if (choice == 99)
+        {
+            d1.print();
+            cout << endl;
+        }
+        else if (choice == 100)
+        {
+            cout << "Exiting" << endl;
+            goto end;
+        }
+        else
+        {
+            cout << "Invalid Option" << endl;
+            goto start;
+        }
+    } while (choice != 100);
+end:
+    return 0;
+}
